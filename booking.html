@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Book Ticket</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>🚆 India National Railway</h1>
+
+    <button onclick="logout()">Logout</button>
+
+</header>
+
+
+
+<div class="container">
+
+    <div class="booking-box">
+
+        <h2>Passenger Details</h2>
+
+
+        <div id="routeDetails"></div>
+
+
+        <label>
+            Passenger Name
+        </label>
+
+        <input type="text"
+               id="passengerName"
+               placeholder="Enter passenger name">
+
+
+
+        <label>
+            Number of Tickets
+        </label>
+
+        <input type="number"
+               id="ticketCount"
+               value="1"
+               min="1"
+               max="10"
+               onchange="calculateFare()">
+
+
+
+        <div class="fare-box">
+
+            <p>
+                Distance:
+                <strong>
+                    <span id="distance"></span> km
+                </strong>
+            </p>
+
+
+            <p>
+                Rate:
+                <strong>
+                    ₹4.67 per km
+                </strong>
+            </p>
+
+
+            <p>
+                Price per Ticket:
+                ₹<strong id="pricePerTicket">
+                </strong>
+            </p>
+
+
+            <h3>
+                Total Amount:
+                ₹<span id="totalAmount">
+                </span>
+            </h3>
+
+        </div>
+
+
+
+        <h3>💳 UPI Payment</h3>
+
+
+        <input type="text"
+               id="upiId"
+               placeholder="Enter UPI ID">
+
+
+        <button class="main-btn"
+                onclick="makePayment()">
+
+            Pay Now
+
+        </button>
+
+
+        <p id="paymentMessage"></p>
+
+    </div>
+
+</div>
+
+
+<script src="js/booking.js"></script>
+
+</body>
+</html>
