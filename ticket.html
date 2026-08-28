@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Railway Ticket</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>🚆 India National Railway</h1>
+
+</header>
+
+
+
+<div class="container">
+
+
+    <div class="ticket" id="ticket">
+
+
+        <div class="ticket-header">
+
+            <h2>
+                🇮🇳 INDIA NATIONAL RAILWAY
+            </h2>
+
+            <p>
+                E-TICKET
+            </p>
+
+        </div>
+
+
+
+        <div class="ticket-body">
+
+
+            <p>
+                <strong>Ticket ID:</strong>
+
+                <span id="ticketId"></span>
+            </p>
+
+
+            <p>
+                <strong>Passenger Name:</strong>
+
+                <span id="passenger"></span>
+            </p>
+
+
+            <p>
+                <strong>Route:</strong>
+
+                <span id="route"></span>
+            </p>
+
+
+            <p>
+                <strong>Distance:</strong>
+
+                <span id="ticketDistance"></span>
+                km
+            </p>
+
+
+            <p>
+                <strong>Number of Tickets:</strong>
+
+                <span id="count"></span>
+            </p>
+
+
+            <p>
+                <strong>Price / Ticket:</strong>
+
+                ₹<span id="ticketPrice"></span>
+            </p>
+
+
+            <p>
+                <strong>Total Amount:</strong>
+
+                ₹<span id="ticketTotal"></span>
+            </p>
+
+
+            <p>
+                <strong>Payment:</strong>
+
+                UPI ✓
+            </p>
+
+
+            <div class="success">
+
+                BOOKING CONFIRMED ✓
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="ticket-buttons">
+
+
+        <button class="main-btn"
+                onclick="downloadTicket()">
+
+            ⬇️ Download Ticket
+
+        </button>
+
+
+
+        <button class="share-btn"
+                onclick="shareTicket()">
+
+            📤 Share Ticket
+
+        </button>
+
+
+
+        <button class="secondary-btn"
+                onclick="bookAnother()">
+
+            🚆 Book Another Ticket
+
+        </button>
+
+
+    </div>
+
+
+</div>
+
+
+
+<script src="js/ticket.js"></script>
+
+</body>
+</html>
